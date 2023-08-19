@@ -8,28 +8,43 @@
     <title>Modal window</title>
   </head>
   <body>
-    <button class="show-modal">Modal 1</button>
-    <button class="show-modal">Modal 2</button>
-    <button class="show-modal">Modal 3</button>
+    <button class="btn-chatGPT" id="btn">ChatGPT</button>
+    <button class="btn-bard" id="btn">Google Bard</button>
+    <button class="btn-huggingchat" id="btn">HuggingChat</button>
 
-    <div class="modal hidden">
+    <div class="mainbody">
+
+    <div class="modal chatgpt hidden">
       <button class="close-modal">&times;</button>
-      <h1>I'm a modal window 😍</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <h1 class="chatgpt-h1">ChatGPT</h1>
+      <p class="p chatgpt">
+        ChatGPT is a form of generative AI -- a tool that lets users enter prompts to receive humanlike images, text or videos that are created by AI. ChatGPT is similar to the automated chat services found on customer service websites, as people can ask it questions or request clarification to ChatGPT's replies.
+      </p>
+    </div>
+
+    <div class="modal bard hidden">
+        <button class="close-modal">&times;</button>
+      <h1 class="bard-h1">Bard</h1>
+      <p class="p bard">
+        Bard is a conversational generative artificial intelligence chatbot developed by Google, based initially on the LaMDA family of large language models (LLMs) and later the PaLM LLM. It was developed as a direct response to the rise of OpenAI's ChatGPT,[3] and was released in a limited capacity in March 2023 to lukewarm responses, before expanding to other countries in May.
+      </p>
+    </div>
+
+    <div class="modal huggingchat hidden">
+        <button class="close-modal">&times;</button>
+      <h1 class="huggingchat-h1">Hugging Chat</h1>
+      <p class="p huggingchat">
+        HuggingFace is a large open-source community that builds tools to enable users to build, train, and deploy machine learning models based on open-source code and technologies.
       </p>
       <button class="btn" id="btn1"></button>
       <button class="btn" id="btn2"></button>
       <button class="btn" id="btn3"></button>
       <button class="btn" id="btn4"></button>
     </div>
-    <div class="overlay hidden"></div>
+  </div>
+
+  <div class="overlay hidden">
+  </div>
 
     <script src="script.js"></script>
   </body>
