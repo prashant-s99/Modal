@@ -50,16 +50,14 @@
   
   p {
     font-size: 1.8rem;
-    
   }
   
-  /* -------------------------- */
   /* CLASSES TO MAKE MODAL WORK */
 
 
-  /* .modal,.bard,.huggingchat,.hidden{
+  .hidden{
     display:none ;
-  } */
+  }
   
   .modal {
     position: absolute;
