@@ -1,11 +1,14 @@
 'use strict';
 
+const mod= document.querySelectorAll('.modal');
+
 const chatgpt = document.querySelector('.chatgpt');
 const bard = document.querySelector('.bard');
-const huggingchat = document.querySelector('.huggingchat')
+const huggingchat = document.querySelector('.huggingchat');
+const overlay = document.querySelector('.overlay');
 
-const showOverlay = ()=> document.querySelector('.overlay').classList.remove('hidden');
-const hideOverlay = ()=> document.querySelector('.overlay').classList.add('hidden');
+const showOverlay = ()=> overlay.classList.remove('hidden');
+const hideOverlay = ()=> overlay.classList.add('hidden');
 
 const closeChatGPT = document.querySelector('.chatgptcl');
 const closeBard = document.querySelector('.bardcl');
@@ -36,4 +39,36 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
         closeHuggingChat.addEventListener('click',function(){
             huggingchat.classList.add('hidden');
             hideOverlay();
+        });
+
+        document.addEventListener('keydown', function(event){
+            if(event.key==='Escape')
+            {
+                // {
+                //     if(!(chatgpt.classList.contains('hidden')))
+                //     {
+                //         chatgpt.classList.add('hidden');
+                //         hideOverlay();
+                //     }
+                //     else if(!(bard.classList.contains('hidden')))
+                //     {
+                //         bard.classList.add('hidden');
+                //         hideOverlay();
+                //     }
+                //     else if(!(huggingchat.classList.contains('hidden')))
+                //     {
+                //         huggingchat.classList.add('hidden');
+                //         hideOverlay();
+                //     }
+                // }
+                    for(let i=0; i<mod.length; i++)
+                    {
+                        if(!mod[i].classList.contains('hidden'))
+                        {
+                        mod[i].classList.add('hidden');
+                        hideOverlay();
+                        }
+                            
+                        }
+            }
         });
