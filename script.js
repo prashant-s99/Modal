@@ -25,14 +25,14 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
 
 
         closeChatGPT.addEventListener('click',function(){
-            document.querySelector('.chatgpt').classList.add('hidden');
+            chatgpt.classList.add('hidden');
             overlay.classList.add('hidden');
         });
         closeBard.addEventListener('click',function(){
-            document.querySelector('.bard').classList.add('hidden');
+            bard.classList.add('hidden');
             overlay.classList.add('hidden');
         });
         closeHuggingChat.addEventListener('click',function(){
-            document.querySelector('.huggingchat').classList.add('hidden');
+            huggingchat.classList.add('hidden');
             overlay.classList.add('hidden');
         });
