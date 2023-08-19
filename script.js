@@ -41,6 +41,7 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
             hideOverlay();
         });
 
+        //'Esc' keypress event listener
         document.addEventListener('keydown', function(event){
             if(event.key==='Escape')
             {
@@ -61,6 +62,8 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
                 //         hideOverlay();
                 //     }
                 // }
+
+                //Looping on elements having a common class name and checking wheather
                     for(let i=0; i<mod.length; i++)
                     {
                         if(!mod[i].classList.contains('hidden'))
@@ -68,7 +71,6 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
                         mod[i].classList.add('hidden');
                         hideOverlay();
                         }
-                            
-                        }
+                    }
             }
         });
