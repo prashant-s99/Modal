@@ -4,9 +4,7 @@ const chatgpt = document.querySelector('.chatgpt');
 const bard = document.querySelector('.bard');
 const huggingchat = document.querySelector('.huggingchat')
 
-const showOverlay = ()=> {
-    document.querySelector('.overlay').classList.remove('hidden')
-};
+const showOverlay = ()=> document.querySelector('.overlay').classList.remove('hidden');
 const hideOverlay = ()=> document.querySelector('.overlay').classList.add('hidden');
 
 const closeChatGPT = document.querySelector('.chatgptcl');
@@ -25,7 +23,7 @@ const closeHuggingChat = document.querySelector('.huggingchatcl');
             huggingchat.classList.remove('hidden');
             showOverlay();
         });
-
+        
 
         closeChatGPT.addEventListener('click',function(){
             chatgpt.classList.add('hidden');
